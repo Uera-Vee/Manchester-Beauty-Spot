@@ -271,15 +271,3 @@ footer .socials a:hover {
     padding: 12px;
   }
 }
-
-
-/* ========== MOBILE FIXES ========== */
-@media (max-width: 768px) {
-  /* your other phone fixes... */
-
-  .hero-img {
-    width: 100vw;
-    height: 100vh;
-    animation: shrinkImageMobile 2s ease forwards;
-  }
-}
