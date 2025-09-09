@@ -194,13 +194,78 @@ footer .socials a:hover {
   text-decoration: underline;
 }
 
-/* Mobile Fixes */
-@media (max-width: 768px) {
-  .hero { flex-direction: column; text-align: center; padding: 20px; }
-  .hero-img { width: 100%; height: auto; object-fit: cover; }
-  .hero-text { margin-left: 0; }
-  .hero-text h1 { font-size: 2rem; }
-  .hero-text h2 { font-size: 1.2rem; }
-  .hero-text p { font-size: 1rem; padding: 0 10px; }
-  .btn { font-size: 1rem; padding: 10px 15px; }
+/* ========== EXTRA MOBILE FIXES ========== */
+@media (max-width: 480px) {
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* prevent cropping on small screens */
+    position: relative;
+    transform: none; /* remove shift */
+    animation: none;  /* skip shrink animation for phones */
+    border-radius: 0;
+  }
+
+  .hero-text {
+    margin: 20px auto 0;
+    max-width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    padding: 30px 15px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* stack items vertically */
+    gap: 15px;
+  }
+
+  .portfolio-grid img,
+  .portfolio-grid video {
+    width: 90%; /* fill most of the phone screen */
+  }
+
+  /* Booking section */
+  .booking {
+    padding: 30px 15px;
+  }
+
+  .booking-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 90%;  /* make buttons wide & easy to tap */
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+    padding: 20px 10px;
+  }
 }
+
