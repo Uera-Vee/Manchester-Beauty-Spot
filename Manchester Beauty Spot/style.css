@@ -314,3 +314,30 @@ footer .socials a:hover {
     margin-top: 20px;
   }
 }
+
+/* all your main styles here... */
+
+/* ========== MOBILE FIXES ========== */
+@media (max-width: 768px) {
+  /* your other phone fixes... */
+
+  .hero-img {
+    width: 100vw;
+    height: 100vh;
+    animation: shrinkImageMobile 2s ease forwards;
+  }
+
+  @keyframes shrinkImageMobile {
+    0% {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+    }
+    100% {
+      width: 80vw;
+      height: 50vh;
+      left: 50%;
+      border-radius: 15px;
+    }
+  }
+}
