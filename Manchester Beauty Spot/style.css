@@ -194,29 +194,59 @@ footer .socials a:hover {
   text-decoration: underline;
 }
 
-/* ========== EXTRA MOBILE FIXES ========== */
+/* ========== MOBILE HERO ANIMATION FIX ========== */
 @media (max-width: 480px) {
-  /* Hero section */
   .hero {
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px;
+    height: auto; /* let it grow naturally */
   }
 
   .hero-img {
-    width: 100%;
-    height: auto;
-    object-fit: contain; /* prevent cropping on small screens */
     position: relative;
-    transform: none; /* remove shift */
-    animation: none;  /* skip shrink animation for phones */
-    border-radius: 0;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 70vw;   /* smaller image */
+    height: auto;
+    max-width: 300px;
+    border-radius: 20px;
+    animation: shrinkImageMobile 2s ease forwards;
+  }
+
+  @keyframes shrinkImageMobile {
+    0% {
+      width: 100vw;
+      height: auto;
+      border-radius: 0;
+    }
+    100% {
+      width: 70vw;
+      border-radius: 20px;
+    }
   }
 
   .hero-text {
     margin: 20px auto 0;
     max-width: 90%;
   }
+
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text p,
+  .hero-text .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s ease forwards;
+  }
+
+  .hero-text h1 { animation-delay: 2s; }
+  .hero-text h2 { animation-delay: 2.5s; }
+  .hero-text p { animation-delay: 3s; }
+  .hero-text .btn { animation-delay: 3.5s; }
 
   .hero-text h1 {
     font-size: 1.6rem;
@@ -231,41 +261,9 @@ footer .socials a:hover {
     line-height: 1.4;
   }
 
-  /* Portfolio */
-  .portfolio {
-    padding: 30px 15px;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr; /* stack items vertically */
-    gap: 15px;
-  }
-
-  .portfolio-grid img,
-  .portfolio-grid video {
-    width: 90%; /* fill most of the phone screen */
-  }
-
-  /* Booking section */
-  .booking {
-    padding: 30px 15px;
-  }
-
-  .booking-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-
   .btn {
-    width: 90%;  /* make buttons wide & easy to tap */
+    width: 90%;
     font-size: 1rem;
     padding: 12px;
   }
-
-  /* Footer */
-  footer {
-    font-size: 0.9rem;
-    padding: 20px 10px;
-  }
 }
-
