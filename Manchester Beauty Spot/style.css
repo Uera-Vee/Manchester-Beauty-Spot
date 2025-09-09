@@ -282,18 +282,4 @@ footer .socials a:hover {
     height: 100vh;
     animation: shrinkImageMobile 2s ease forwards;
   }
-
-  @keyframes shrinkImageMobile {
-    10% {
-      width: 100vw;
-      height: 100vh;
-      border-radius: 0;
-    }
-    100% {
-      width: 80vw;
-      height: 50vh;
-      left: 16%;
-      border-radius: 15px;
-    }
-  }
 }
