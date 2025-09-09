@@ -18,12 +18,16 @@ body {
 /* Hero Section */
 .hero {
   display: flex;
+  flex-direction: column;   /* stack logo and text vertically */
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: center;  /* center everything in the screen */
+  min-height: 100vh;        /* always fill full screen */
   overflow: hidden;
   position: relative;
+  padding-bottom: 60px;     /* push content up slightly so 'Our Work' is hidden */
+  box-sizing: border-box;
 }
+
 
 /* Hero Image Animation */
 .hero-img {
