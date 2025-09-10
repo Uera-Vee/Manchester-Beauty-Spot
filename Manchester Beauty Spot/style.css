@@ -288,7 +288,7 @@ footer .socials a:hover {
     height: 100vh;
     animation: shrinkImageMobile 2.5s ease forwards;
     top: 30%;
-    left: 40%;
+    left: 42%;
     transform: translate(-50%, -50%);
   }
 
