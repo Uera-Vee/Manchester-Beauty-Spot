@@ -286,9 +286,9 @@ footer .socials a:hover {
   .hero-img {
     width: 100vw;
     height: 100vh;
-    animation: shrinkImageMobile 3s ease forwards;
+    animation: shrinkImageMobile 2.5s ease forwards;
     top: 30%;
-    left: 35%;
+    left: 40%;
     transform: translate(-50%, -50%);
   }
 
