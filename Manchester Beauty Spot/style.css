@@ -278,7 +278,7 @@ footer .socials a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* start from top, then push down */
-    padding-top: 80px; /* adjust this value to lower everything */
+    padding-top: 60px; /* adjust this value to lower everything */
     height: 100vh;
     text-align: center;
     overflow: hidden; /* prevent scrollbars during animation */
