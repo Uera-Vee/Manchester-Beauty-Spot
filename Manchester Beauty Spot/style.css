@@ -281,15 +281,15 @@ footer .socials a:hover {
     padding-top: 80px; /* adjust this value to lower everything */
     height: 100vh;
     text-align: center;
+    overflow: hidden; /* prevent scrollbars during animation */
   }
 
   .hero-img {
     width: 100vw;
     height: 100vh;
     animation: shrinkImageMobile 2.5s ease forwards;
-    top: 30%;
-    left: 41%;
-    transform: translate(-50%, -50%);
+    border-radius: 0;
+    object-fit: contain; /* keeps proportions */
   }
 
   .hero-content {
