@@ -380,3 +380,37 @@ footer .socials a:hover {
   min-width: 120px;
   text-align: center;
 }
+
+.map {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.map h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 1000px; /* keeps it neat on big screens */
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.map {
+  text-align: center;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 15px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
