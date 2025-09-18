@@ -352,3 +352,18 @@ footer .socials a:hover {
     }
   }
 }
+
+
+/* Mobile Gallery Fix */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row on mobile */
+    gap: 10px;
+  }
+
+  .portfolio-grid img,
+  .portfolio-grid video {
+    width: 100%;   /* make them fill their grid cell */
+    max-width: none;
+  }
+}
