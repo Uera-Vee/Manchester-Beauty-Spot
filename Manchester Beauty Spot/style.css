@@ -157,6 +157,48 @@ body {
 
 html { scroll-behavior: smooth; }
 
+/* Prices Section */
+.prices {
+  padding: 50px 20px;
+  text-align: center;
+  background: #111; /* subtle difference from hero */
+  color: #fff;
+}
+
+.prices h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #b08d57; /* deep bronze heading */
+  font-family: "Times New Roman", Times, serif;
+}
+
+.price-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.price-item {
+  background: #181818;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.price-item h3 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.price-item p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
 /* Booking */
 .booking {
   text-align: center;
