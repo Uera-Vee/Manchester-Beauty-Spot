@@ -367,3 +367,16 @@ footer .socials a:hover {
     max-width: none;
   }
 }
+
+.hero-buttons {
+  display: flex;
+  gap: 10px; /* spacing between buttons */
+  justify-content: center;
+  flex-wrap: wrap; /* prevents cutoff on very small screens */
+}
+
+.hero-buttons .btn {
+  flex: 1; /* buttons shrink nicely side by side */
+  min-width: 120px;
+  text-align: center;
+}
